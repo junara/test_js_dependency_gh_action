@@ -9,5 +9,5 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: junara/pull_request_comment_of_javascript_dependency_graph/action.yml@main
+      - uses: junara/pull_request_comment_of_javascript_dependency_graph@main
 
