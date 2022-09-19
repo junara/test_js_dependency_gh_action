@@ -10,4 +10,12 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: junara/pull_request_comment_of_javascript_dependency_graph@main
+        with:
+          src_path: src
+          child_analyze_level: 2
+          parent_analyze_level: 2
+          name_level: 2
+          alias_paths: "@:./pages"
+          exclude_output_names: "pages"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
