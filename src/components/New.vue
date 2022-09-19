@@ -6,4 +6,6 @@
 <script
     src="./modal.js">
 import Button from './Button';
+console.log('')
+
 </script>
