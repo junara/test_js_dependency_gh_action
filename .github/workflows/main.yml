@@ -1,0 +1,12 @@
+name: Add js_dependency analysis report in pull request comment
+on:
+  pull_request:
+
+jobs:
+  js_dependency:
+    name: Export Mermaid by js_dependency
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: junara/pull_request_comment_of_javascript_dependency_graph/action.yml
